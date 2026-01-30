@@ -2,7 +2,7 @@
     "settings": {
         "voice": "ru-RU-DmitryNeural",
         "vosk_path": "model/vosk-model-small-ru-0.22",
-        "name": "гоша"
+        "name": "лиза"
     },
     "commands": [
         {

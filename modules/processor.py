@@ -7,7 +7,7 @@ class CommandProcessor:
         self.base_dir = base_dir
         config_path = os.path.join(base_dir, "config.json")
         
-        self.assistant_name = "гоша" # Дефолт
+        self.assistant_name = "лиза" # Дефолт
         self.commands = []
 
         try:

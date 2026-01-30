@@ -1,4 +1,4 @@
-# G.O.S.H.A — Generative Open Speech Human like Assistant
+# L.I.S.A. — Linux Integrated Smart Assistant
 ![alt text](image.png)
 
 Голосовой ассистент, работающий как фоновая служба (systemd). Проект разработан для участия в студенческой научно-практической конференции **«Технологии будущего: от идеи к реальности»** (Колледж программирования и кибербезопасности РТУ МИРЭА).
@@ -16,14 +16,14 @@
 
 1. **Клонирование репозитория:**
    ```bash
-   git clone https://github.com/ValterGames-Coder/G.O.S.H.A.git
+   git clone https://github.com/ValterGames-Coder/L.I.S.A.git
    cd G.O.S.H.A
    ```
 
 2. **Запуск установщика:**
    ```bash
-   chmod +x install_gosha.sh
-   ./install_gosha.sh
+   chmod +x install_lisa.sh
+   ./install_lisa.sh
    ```
 
 ## Управление (Systemd)
@@ -32,20 +32,20 @@
 
 *   **Просмотр логов (что говорит и слышит бот):**
     ```bash
-    journalctl --user -u G.O.S.H.A -f
+    journalctl --user -u L.I.S.A -f
     ```
     *(Нажмите `Ctrl+C` для выхода)*
 
 *   **Проверка статуса:**
     ```bash
-    systemctl --user status G.O.S.H.A
+    systemctl --user status L.I.S.A
     ```
 
 *   **Ручной запуск / Перезагрузка / Остановка:**
     ```bash
-    systemctl --user start G.O.S.H.A
-    systemctl --user restart G.O.S.H.A
-    systemctl --user stop G.O.S.H.A
+    systemctl --user start L.I.S.A
+    systemctl --user restart L.I.S.A
+    systemctl --user stop L.I.S.A
     ```
 
 ## Конфигурация

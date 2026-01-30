@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # --- НАСТРОЙКИ ---
-SERVICE_NAME="G.O.S.H.A"
+SERVICE_NAME="L.I.S.A"
 PROJECT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 SERVICE_FILE="$HOME/.config/systemd/user/$SERVICE_NAME.service"
 PYTHON_BIN=$(which python3)
@@ -41,7 +41,7 @@ mkdir -p "$HOME/.config/systemd/user/"
 echo ">> Создаю файл службы: $SERVICE_FILE"
 cat > "$SERVICE_FILE" <<EOF
 [Unit]
-Description=G.O.S.H.A - Generative Open Speech Human like Assistant 
+Description=L.I.S.A. — Linux Integrated Smart Assistant
 After=network.target sound.target
 
 [Service]
@@ -72,5 +72,5 @@ echo ">> Перезапуск сервиса..."
 systemctl --user restart $SERVICE_NAME
 
 echo "==========================================="
-echo "   ГОТОВО! G.O.S.H.A запущен."
+echo "   ГОТОВО! L.I.S.A запущен."
 echo "==========================================="

@@ -37,7 +37,7 @@ QPushButton#btnSave:pressed { background-color: #2563eb; border-color: #2563eb; 
 class ConfigEditor(QMainWindow):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("G.O.S.H.A Config Editor")
+        self.setWindowTitle("L.I.S.A Config Editor")
         self.resize(1100, 800)
         
         self.config_data = {}
@@ -68,7 +68,7 @@ class ConfigEditor(QMainWindow):
         left_layout.addWidget(lbl_name)
 
         self.input_bot_name = QLineEdit()
-        self.input_bot_name.setPlaceholderText("Например: гоша")
+        self.input_bot_name.setPlaceholderText("Например: Лиза")
         self.input_bot_name.setToolTip("Ассистент будет реагировать только если фраза начинается с этого имени")
         left_layout.addWidget(self.input_bot_name)
         
