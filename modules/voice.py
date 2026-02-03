@@ -17,7 +17,7 @@ class HybridVoice:
 
         self.vosk_path = os.path.join(base_dir, self.cfg["settings"]["vosk_path"])
         self.voice_name = self.cfg["settings"]["voice"]
-        self.temp_audio = "/tmp/gosha_reply.mp3"
+        self.temp_audio = "/tmp/lisa_reply.mp3"
 
         if not os.path.exists(self.vosk_path):
             print(f"ОШИБКА: Нет модели Vosk в {self.vosk_path}")
@@ -30,14 +30,14 @@ class HybridVoice:
         self.p = pyaudio.PyAudio()
         self.stream = self.p.open(format=pyaudio.paInt16, channels=1, rate=16000, input=True, frames_per_buffer=4000)
         self.stream.start_stream()
-        print(">> Гоша готов к работе.")
+        print(">> Лиза готова к работе.")
 
     async def _generate_audio(self, text):
         communicate = edge_tts.Communicate(text, self.voice_name)
         await communicate.save(self.temp_audio)
 
     def speak(self, text):
-        print(f"GOSHA: {text}")
+        print(f"LISA: {text}")
         if self.stream.is_active(): self.stream.stop_stream()
 
         try:
